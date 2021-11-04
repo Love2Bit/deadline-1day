@@ -179,7 +179,7 @@ $no_urut= mysqli_real_escape_string($koneksi, $_POST['no_urut']);
                               <td><?php echo $d['nim']; ?></td>
                               <td style="text-transform: capitalize;"><?php echo $d['nama_mhs']; ?></td>
                               <td><mark style="background-color: yellow;"><b><?php echo $d['status']; ?></b></mark></td>
-                              <td><a class="btn btn-danger btn-circle" onclick="return confirm('Yakin hapus data ini !!!')" href="hapus.php?no_urut=<?php echo $d['no_urut']; ?>">Hapus</a>
+                              <td><a class="btn btn-danger btn-circle" onclick="return confirm('Yakin hapus data ini !!!')" href="hapus_dpt.php?nim=<?php echo $d['nim']; ?>">Hapus</a>
                               </td>
                           </tr>
                             <?php } ?>
